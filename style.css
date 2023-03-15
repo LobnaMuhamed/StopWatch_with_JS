@@ -1,0 +1,68 @@
+body {
+  font-family: Roboto mono, monospace;
+
+  background: #2f81e5;
+}
+.stopwatch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.stopwatch .container {
+  padding: 30px;
+}
+.stopwatch .container .timer {
+  background-color: #f0f0f0;
+  box-shadow: 10px 10px 8px #888888;
+  font-size: 50px;
+  color: #2f81e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 50px;
+  border-radius: 20px;
+}
+.stopwatch .container .buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+}
+.stopwatch .container .buttons .btn {
+  font-size: 23px;
+  font-weight: 700;
+  color: white;
+  padding: 10px 0;
+  border: none;
+  border-radius: 10px;
+  transition: 0.12s linear;
+  cursor: pointer;
+}
+.stopwatch .container .buttons .btn.pause {
+  background-color: rgb(7, 7, 215);
+}
+.stopwatch .container .buttons .btn.pause:hover {
+  background-color: rgb(0, 0, 255);
+}
+.stopwatch .container .buttons .btn.start {
+  background-color: rgb(202, 21, 21);
+}
+.stopwatch .container .buttons .btn.start:hover {
+  background-color: red;
+}
+.stopwatch .container .buttons .btn.restart {
+  background-color: rgb(5, 188, 5);
+}
+.stopwatch .container .buttons .btn.restart:hover {
+  background-color: rgb(0, 255, 0);
+}
+
+.stopwatch .container .buttons .btn:hover {
+  transform: scale(1.04);
+}
